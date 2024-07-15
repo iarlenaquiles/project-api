@@ -1,4 +1,4 @@
-# Random User Spring Boot RESTful API 
+# PRODUCT API 
 
 Welcome to the Random User Spring Boot RESTful API! This project is a RESTful APIs using Spring Boot 3, Spring Data JPA, and OpenAPI (Swagger) for API documentation. We have utilized the power of Java 17, the latest LTS version of Java, to build this project.
 
@@ -49,14 +49,14 @@ The strategy was chosen to load user data when the application is started and fr
 
 These instructions guide you through cloning the repository and starting the application in Unix or Windows environments, with the development profile enabled.
 
-1. Clone the repository: git clone https://github.com/iarlenaquiles/random-users-api.git
+1. Clone the repository: git clone https://github.com/iarlenaquiles/product-api.git
 2. Start the application in the Unix environment: `./gradlew bootrun --args='--spring.profiles.active=dev'`
 3. Start the application in the Windows environment: `gradle.bat bootrun --args='--spring.profiles.active=dev'`
 4. Run redis on docker
-  ```docker run --name random-user-api-redis -p 6379:6379 -d redis``` 
+  ```docker run --name product-api-redis -p 6379:6379 -d redis``` 
 ## Project Details:
 
-The project focuses on a Random User API as an example, which includes basic CRUD operations and statistics system. It adheres to the best practices of RESTful principles, such as idempotent operations and the use of appropriate HTTP status codes.
+The project focuses on a Product API as an example, which includes basic CRUD operations system. It adheres to the best practices of RESTful principles, such as idempotent operations and the use of appropriate HTTP status codes.
 
 Exception handling is globally managed with a `@RestControllerAdvice` to ensure consistent handling of exceptions throughout the entire application.
 
